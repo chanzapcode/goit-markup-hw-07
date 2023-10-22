@@ -257,6 +257,7 @@ color: white;
 .footer {
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #2E2F42;
   width: 100%;
@@ -280,6 +281,8 @@ p {
 .sicon {
   align-items: center;
   justify-content: center;
+
+  flex-wrap: wrap;
 }
 
 .sicon h5 {
