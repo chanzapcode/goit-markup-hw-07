@@ -155,6 +155,7 @@ span {
   right: 60px;
   top: 300px;
   display: none;
+  list-style: none;
 }
 
 .con a i {
@@ -169,6 +170,7 @@ span {
   font-size: 15px;
   color: rgb(241, 241, 250);
   text-decoration: none;
+  list-style: none;
   transition: .5s;
 }
 .con a i:hover {
@@ -727,7 +729,9 @@ p {
   justify-content: center;
   align-items: center; 
   text-align: left;
-  gap: 5 10%;
+  gap: 10%;
+  margin: 7 10% auto;
+  
 }
 
 .label input {
@@ -791,7 +795,7 @@ p {
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1000px){
   .logo{
     font-size: 18px;
     top: 50px;
@@ -803,6 +807,10 @@ p {
 }
 .sign {
   display: none;
+}
+
+.content h1 {
+  font-size: 60px;
 }
 }
 
@@ -850,11 +858,6 @@ p {
     display: none;
   }
   
-   .sicon{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
   .footer{
     height: 500px;
     width: 500px;
@@ -881,7 +884,7 @@ p {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 10 0% auto;
+  
 
   }
 
@@ -928,5 +931,20 @@ p {
 .logo {
   font-size: 30px;
   top: 10px;
+}
+
+.content {
+  width: 500px;
+  height: 500px;
+}
+.content h1 {
+  font-size: 40px;
+}
+.footer .label .button {
+  margin-top: 10px;
+  
+}
+.con li {
+  list-style: none;
 }
 }
