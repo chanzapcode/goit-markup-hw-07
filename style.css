@@ -958,5 +958,7 @@ p {
 .logo {
   font-size: 25px;
 }
-
+.label input {
+  right: 10px;
+}
 }

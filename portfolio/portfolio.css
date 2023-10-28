@@ -5,7 +5,7 @@
   height: 2076px;
 }
 header {
-  position: fixed;
+ 
   right: 0;
   left: 0;
   top: 0;
@@ -73,14 +73,17 @@ header {
   line-height: 50px;
   cursor: pointer;
   display: none;
+  
 }
 
 #check{
   display: none;
+  
 }
 
 .nav {
-  display: none;  
+  display: none;
+  z-index: 999;  
 }
 
 
@@ -261,7 +264,6 @@ span {
   margin: 5 10% auto;
   gap: 10%;
   transition: 0.8s ease;
-  z-index: 0;
 }
 
 .container:hover {
@@ -373,6 +375,9 @@ color: white;
 .footer .text {
   text-align: left;
   flex-wrap: wrap;
+}
+.sicon a i {
+  margin: 5px;
 }
 
 h4 {
@@ -546,6 +551,9 @@ p {
 .sicon h5 {
   text-align: center;
 }
+.label span {
+  left: 30px;
+}
 }
 
 
@@ -554,6 +562,13 @@ p {
     display: block;
     top: 0;
     position: fixed;
+  }
+  .nav .con  {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .nav .con a i {
+    margin: 10px;
   }
 
   .nav {
@@ -568,11 +583,22 @@ p {
     font-size: 15px;
     display: block;
     color: white;
-    z-index: index 999;
+    z-index: 999;
     transition: all .5s;
   }
   #check:checked ~ .nav{
     right: 0; 
 }
 
+}
+
+@media (max-width: 1100px){
+  .label span {
+    left: 350px;
+  }
+  
+  
+  .logo {
+    margin-left: 25px;
+  }
 }
