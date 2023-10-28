@@ -258,16 +258,17 @@ span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin:  10% auto;
+  margin: 5 10% auto;
   gap: 10%;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
+  z-index: 0;
 }
 
 .container:hover {
-  transform: scale(1.1);
+  transform: scale(.9);
 }
 .parent {
-  position: relative;
+position: relative;
 border: 1px solid var(--CORNFLOWER, #E7E9FC);
 background: var(--WHITE, #FFF);
 display: flex;
@@ -367,7 +368,7 @@ color: white;
   background-color: #2E2F42;
   width: 100%;
   height: 312px;
-  gap: 0 10%;
+  gap: 0 12%;
 }
 .footer .text {
   text-align: left;
@@ -385,12 +386,15 @@ p {
 }
 
 .sicon {
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items:center;
   justify-content: center;
+  text-align: center;
 }
 
 .sicon1 h5 {
+  text-align: center;
   font-family: sans-serif;
   color: white;
   font-size: 20px;
@@ -447,12 +451,13 @@ p {
   outline: none;
   border-radius: 8px;
   background-color: #2E2F42;
+  right: 15px;
 }
 
 .label span {
   font-family: sans-serif;
   position: absolute;
-  left: 61%;
+  left: 64%;
   padding: 10px;
   pointer-events: none;
   font-size: 1em;
@@ -550,4 +555,24 @@ p {
     top: 0;
     position: fixed;
   }
+
+  .nav {
+    border: solid 1px #000005;
+    border-radius: 25px;
+    position: fixed;
+    width: 250px;
+    height: 320px;
+    background-color: #e2e3ee;
+    top: 20px;
+    right: -100%;
+    font-size: 15px;
+    display: block;
+    color: white;
+    z-index: index 999;
+    transition: all .5s;
+  }
+  #check:checked ~ .nav{
+    right: 0; 
+}
+
 }
